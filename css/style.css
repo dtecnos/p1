@@ -1,0 +1,565 @@
+/* ==================================================
+ * SoSoon - Clean and Beautiful Coming Soon Template
+ * v1.0 9/26/2013
+ ================================================== */
+
+/* colors
+color-set-1: 1. #0abed2, 2. #f6d825, 3. #90c93e, 4. #fe50a7
+*/
+
+/* Basic Element Styles
+================================================== */
+body {
+    background: #fff url(../img/white01.png);
+    font: 14px/21px "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+a {
+    color: #f4407f;
+    outline: 0 none;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+       -moz-transition: all 0.25s ease-in-out 0s;
+        -ms-transition: all 0.25s ease-in-out 0s;
+         -o-transition: all 0.25s ease-in-out 0s;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-family: "Open Sans Light", "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 300;
+}
+h1 {
+    font-size: 46px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+h6 {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 20px;
+}
+
+/* Clearing
+================================================== */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* Browser Specific
+================================================== */
+::-moz-selection {
+    color: #fff;
+    background: #30302f;
+    text-shadow: none;
+}
+::selection {
+    color: #fff;
+    background: #30302f;
+    text-shadow: none;
+}
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+    color: #fff;
+    opacity: 0.5;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+    color: #fff;
+    opacity: 0.5;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{ /* IE10+ */
+    color: #fff;
+    opacity: 0.5;
+}
+
+/* Objects Styles
+================================================== */
+
+/* header section */
+#header {
+    border-top: 3px solid #0abed2;
+}
+#branding {
+    border-bottom: 1px solid #e4e4e4;
+}
+.logo {
+    margin-top: 20px;
+}
+.logo h1 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.logo h1 a {
+    background: url(../img/logo.png) no-repeat;
+    display: block;
+    text-indent: -9999px;
+    width: 170px;
+    height: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+.tagline {
+    text-align: center;
+    color: #aaa;
+    font-size: 12px;
+}
+
+/* whatscoming section */
+#whatscoming {
+    text-align: center;
+}
+#whatscoming h2 {
+    color: #0abed2;
+}
+#whatscoming h2 span {
+    color: #fe50a7;
+}
+
+/* countdown section */
+.countdown .forth {
+    border-radius: 3px;
+}
+.countdown .label {
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 5px;
+    margin: 0 20px;
+    color: #fff;
+    opacity: 0.8;
+}
+.ie7 .countdown .label {
+    border-bottom: 1px solid #fff !important;
+}
+.countdown #days,
+.countdown #hours,
+.countdown #minutes,
+.countdown #seconds {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 46px;
+    line-height: normal;
+}
+.color-1 {
+    background-color: #0abed2;
+}
+.color-2 {
+    background-color: #ffbe00;
+}
+.color-3 {
+    background-color: #90c93e;
+}
+.color-4 {
+    background-color: #fe50a7;
+}
+fullwidth.endcontdown {
+    display: none;
+}
+.endcountdown {
+    display: none !important;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    background: #0abed2 url(../img/color01.png);
+}
+.endcountdown h3, .endcountdown p {
+    color: #fff;
+}
+.ended {
+    display: block !important;
+}
+.hidecountdown {
+    display: none;
+}
+
+
+/* action section */
+#action {
+    background: #0abed2 url(../img/color01.png);
+    padding: 40px 0;
+}
+#action,
+#action h2,
+#action h3,
+#action p {
+    color: #fff;
+}
+.error_message {
+    margin-bottom: 10px;
+    text-align: center;
+}
+#success_message h3 {
+    background-color: #fff;
+    color: #0abed2;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    border: 0 none;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    padding: 5px;
+    width: 70px;
+    transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+       -moz-transition: all 0.25s ease-in-out 0s;
+        -ms-transition: all 0.25s ease-in-out 0s;
+         -o-transition: all 0.25s ease-in-out 0s;
+
+}
+input[type="submit"]:hover {
+    background: #fff;
+    color: #0abed2;
+}
+
+/* contact form */
+#contactform input[type="text"],
+#contactform textarea {
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 5px;
+    color: #fff;
+}
+#contactform input[type="text"] {
+    width: 200px;
+}
+#contactform textarea {
+    width: 420px;
+    height: 70px;
+}
+
+#contactform input#submit {
+    float: none;
+    clear: both;
+    display: block;
+}
+
+/* subscribe */
+#subscrition {
+    margin-bottom: 40px;
+}
+#subscribe {
+    clear: both;
+}
+#subscribeform {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 420px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+#subscribeform input#subemail {
+    border: 0 none;
+    float: left;
+    padding: 5px;
+    width: 320px;
+    background-color: transparent;
+    color: #fff;
+}
+#subscribeform input#subsubmit {
+    float: left;
+    width: 90px;
+    border: 0 none;
+    border-radius: 0;
+    border-left: 1px solid #fff;
+}
+
+/* follow us section */
+#followus {
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.socialmedia li {
+    float: left;
+    display: inline;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.socialmedia li a {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px 5px 3px 5px;
+    transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+       -moz-transition: all 0.25s ease-in-out 0s;
+        -ms-transition: all 0.25s ease-in-out 0s;
+         -o-transition: all 0.25s ease-in-out 0s;
+
+}
+.socialmedia li a:hover {
+    background-color: #fff;
+}
+.socialmedia li a span {
+    font-size: 24px;
+    color: #fff;
+}
+.socialmedia li a:hover span {
+    color: #0abed2;
+}
+
+/* info section */
+#info {
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+.button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* footer section */
+#footer {
+}
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 20px;
+}
+
+
+/* Layout Base 960
+================================================== */
+.section {
+    margin-bottom: 40px;
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+.container .fullwidth,
+.container .half,
+.container .forth {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container .fullwidth {
+    width: 940px;
+}
+.container .half {
+    width: 460px;
+}
+.container .forth {
+    width: 220px;
+    margin-bottom: 20px;
+}
+.row {
+    margin-bottom: 20px;
+}
+
+
+/* Layout Tablet (Smaller than 959px)
+================================================== */
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+    .container {
+        width: 700px;
+    }
+    .container .fullwidth,
+    .container .half {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container .fullwidth {
+        width: 680px;
+    }
+    .container .half {
+        width: 330px;
+    }
+    .container .forth {
+        width: 155px;
+    }
+    #contactform input[type="text"] {
+        width: 200px;
+    }
+    #contactform textarea {
+        width: 320px;
+    }
+    #subscribeform {
+        width: 330px;
+    }
+    #subscribeform input#subemail {
+        width: 230px;
+    }
+    #subscribeform input#subsubmit {
+        width: 90px;
+    }
+}
+
+
+/* Layout Mobile (Portrait) width of 320px
+================================================== */
+@media only screen and (max-width: 719px) {
+    .container {
+        width: 300px;
+    }
+    .container .fullwidth,
+    .container .half {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container .fullwidth {
+        width: 300px;
+    }
+    .container .half {
+        width: 300px;
+    }
+    .container .forth {
+        width: 130px;
+    }
+    #contactform textarea {
+        width: 290px;
+    }
+    #subscribeform {
+        width: 290px;
+    }
+    #subscribeform input#subemail {
+        width: 190px;
+    }
+    #subscribeform input#subsubmit {
+        width: 90px;
+    }
+
+}
+
+
+/* Layout Mobile (landscape) width of 600px
+================================================== */
+@media only screen and (min-width: 600px) and (max-width: 719px) {
+    .container {
+        width: 600px;
+    }
+    .container .fullwidth,
+    .container .half {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container .fullwidth {
+        width: 580px;
+    }
+    .container .half {
+        width: 580px;
+    }
+    .container .forth {
+        width: 130px;
+    }
+    #followus {
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    #subscribeform {
+        width: 330px;
+    }
+    #subscribeform input#subemail {
+        width: 230px;
+    }
+    #subscribeform input#subsubmit {
+        width: 90px;
+    }
+}
+
+
+/* Layout Mobile (landscape) width of 420px
+================================================== */
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+    .container {
+        width: 420px;
+    }
+    .container .fullwidth,
+    .container .half {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container .fullwidth {
+        width: 420px;
+    }
+    .container .half {
+        width: 420px;
+    }
+    .container .forth {
+        width: 190px;
+    }
+    #contactform textarea {
+        width: 400px;
+    }
+    #subscribeform {
+        width: 400px;
+    }
+    #subscribeform input#subemail {
+        width: 290px;
+    }
+    #subscribeform input#subsubmit {
+        width: 90px;
+    }
+}
+
+
+/* End of Document
+================================================== */

@@ -1,0 +1,46 @@
+/* ==================================================
+ * SoSoon - color05.css
+ * v1.0 2/22/2013
+ ================================================== */
+
+/* colors
+color-set-1: 1. #0abed2, 2. #fb5859, 3. #90c93e, 4. #fe50a7
+*/
+
+/* Basic Element Styles
+================================================== */
+body {
+    background: #fff url(../img/white05.png);
+}
+a,
+#whatscoming h2 span{
+    color: #fe50a7;
+}
+#header {
+    border-top: 3px solid #fb5859;
+}
+#whatscoming h2,
+#success_message h3,
+input[type="submit"]:hover,
+.socialmedia li a:hover span{
+    color: #0abed2;
+}
+.color-1 {
+    background-color: #0abed2;
+}
+.color-2 {
+    background-color: #fb5859;
+}
+.color-3 {
+    background-color: #90c93e;
+}
+.color-4 {
+    background-color: #fe50a7;
+}
+.endcountdown,
+#action {
+    background: #fb5859 url(../img/color05.png);
+}
+
+/* End of Document
+================================================== */

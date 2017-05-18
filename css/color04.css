@@ -1,0 +1,46 @@
+/* ==================================================
+ * SoSoon - color04.css
+ * v1.0 2/22/2013
+ ================================================== */
+
+/* colors
+color-set-1: 1. #0abed2, 2. #6b5248, 3. #90c93e, 4. #fe50a7
+*/
+
+/* Basic Element Styles
+================================================== */
+body {
+    background: #fff url(../img/white04.png);
+}
+a,
+#whatscoming h2 span{
+    color: #fe50a7;
+}
+#header {
+    border-top: 3px solid #6b5248;
+}
+
+#success_message h3,
+input[type="submit"]:hover,
+.socialmedia li a:hover span{
+    color: #6b5248;
+}
+.color-1 {
+    background-color: #6b5248;
+}
+.color-2 {
+    background-color: #0abed2;
+}
+.color-3 {
+    background-color: #90c93e;
+}
+.color-4 {
+    background-color: #fe50a7;
+}
+.endcountdown,
+#action {
+    background: #6b5248 url(../img/color04.png);
+}
+
+/* End of Document
+================================================== */
